@@ -6,7 +6,7 @@ GAME DEVELOP NOTATION
     ```
     ex)for(int i = 0 ; i < GAMETIME ; i++){
        int time += i;
-     }                                       //for문 내에서 사용하는 i 같은 변수 외에는 사용하는 변수이름을 알아보기 쉽게.
+     }                                 //for문 내에서 사용하는 i 같은 변수 외에는 사용하는 변수이름을 알아보기 쉽게.
     ```
     
     
