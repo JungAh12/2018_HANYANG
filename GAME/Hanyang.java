@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 
-/*---------¾ÆÀÌÅÛ Å¬·¡½º------------*/
+/*---------ì•„ì´í…œ í´ë˜ìŠ¤------------*/
 class Item{
 	private double time;
 	private String state;
@@ -21,7 +21,7 @@ class Item{
 }
 /*--------------------------------*/
 
-/*-------------Àå¾Ö¹° Å¬·¡½º------------*/
+/*-------------ì¥ì• ë¬¼ í´ë˜ìŠ¤------------*/
 class Obstacle{
 	private double time;
 	
@@ -31,20 +31,20 @@ class Obstacle{
 }
 /*---------------------------------*/
 
-/*----------¿µ»ó ¶ç¿ì±â----------------*/
+/*----------ì˜ìƒ ë„ìš°ê¸°----------------*/
 public class Hanyang extends JFrame{
 	
-	JPanel contentPane;																//ÆĞ³Î¼±¾ğ
-	JLabel imageLabel = new JLabel();												//ÆĞ³Î¿¡ Ãß°¡ÇÒ ÀÌ¹ÌÁö ·¹ÀÌºí »ı¼º
+	JPanel contentPane;																//ì–‘ì •ì•„ : íŒ¨ë„ì„ ì–¸
+	JLabel imageLabel = new JLabel();												//ì–‘ì •ì•„ : íŒ¨ë„ì— ì¶”ê°€í•  ì´ë¯¸ì§€ ë ˆì´ë¸” ìƒì„±
 	
 	public static void main(String argc[]) {
 		
-		/*-----Item »ı¼º (ÀÎÀÚ ¾ÆÁ÷ È®Á¤x)--------*/
+		/*-----Item ìƒì„± (ì¸ì ì•„ì§ í™•ì •x)--------*/
 		Item water = new Item(0,"damageZero",0);
 		Item wingShoes =new Item(0,null,1.5);
 		Item clock = new Item(3.0,null,0);
 		
-		/*-----Obstacle »ı¼º (ÀÎÀÚ ¾ÆÁ÷ È®Á¤x)--------*/
+		/*-----Obstacle ìƒì„± (ì¸ì ì•„ì§ í™•ì •x)--------*/
 		Obstacle drunken = new Obstacle(1.0);
 		Obstacle cat = new Obstacle(0.5);
 		Obstacle grandma = new Obstacle(3.0);
@@ -52,25 +52,25 @@ public class Hanyang extends JFrame{
 		Obstacle trash = new Obstacle(0.5);
 		Obstacle manhole = new Obstacle(100.0);
 		
-		new Hanyang();																//¿µ»ó¶ç¿ì±â
+		new Hanyang();																//ì–‘ì •ì•„ : ì˜ìƒë„ìš°ê¸°
 		
 	}
 	
 	public Hanyang(){
 		try {
-			setDefaultCloseOperation(EXIT_ON_CLOSE);								//´İ±â ¹öÆ° È°¼ºÈ­
-			contentPane = (JPanel)getContentPane();									//ÀÔ·ÂÀ» ¹Ş±âÀ§ÇÑ Æ÷Ä¿½º È°¼ºÈ­
-			contentPane.setLayout(new BorderLayout());								//±¸¼º¿ä¼Ò¸¦ ¿øÇÏ´Â °÷¿¡ ¹èÄ¡ÇÒ ¼ö ÀÖ´Â ·¹ÀÌ¾Æ¿ô
-			setSize(new Dimension(500,500));										//À©µµ¿ì »çÀÌÁî ¼³Á¤
-			setTitle("Hanyang");													//À©µµ¿ì Å¸ÀÌÆ² ¼³Á¤
+			setDefaultCloseOperation(EXIT_ON_CLOSE);								//ì–‘ì •ì•„ : ë‹«ê¸° ë²„íŠ¼ í™œì„±í™”
+			contentPane = (JPanel)getContentPane();									//ì–‘ì •ì•„ : ì…ë ¥ì„ ë°›ê¸°ìœ„í•œ í¬ì»¤ìŠ¤ í™œì„±í™”
+			contentPane.setLayout(new BorderLayout());								//ì–‘ì •ì•„ : êµ¬ì„±ìš”ì†Œë¥¼ ì›í•˜ëŠ” ê³³ì— ë°°ì¹˜í•  ìˆ˜ ìˆëŠ” ë ˆì´ì•„ì›ƒ
+			setSize(new Dimension(500,500));										//ì–‘ì •ì•„ : ìœˆë„ìš° ì‚¬ì´ì¦ˆ ì„¤ì •
+			setTitle("Hanyang");													//ì–‘ì •ì•„ : ìœˆë„ìš° íƒ€ì´í‹€ ì„¤ì •
 			
-			ImageIcon img = new ImageIcon(this.getClass().getResource("4.gif"));	//Ç¥½ÃÇÏ°íÀÚ ÇÏ´Â ÀÌ¹ÌÁö ¾ÆÀÌÄÜ »ı¼º
-			imageLabel.setIcon(img);												//JLabel¿¡ ÀÌ¹ÌÁö ¼³Á¤
-			contentPane.add(imageLabel, java.awt.BorderLayout.CENTER);				//JPanel¿¡ Ãß°¡
-			this.setLocationRelativeTo(null);										//Ã¢ Áß¾Ó¿¡ À©µµ¿ì »ı¼ºÇÏ°Ô ÇÔ
-			this.setVisible(true);													//½Ã°¢È­
+			ImageIcon img = new ImageIcon(this.getClass().getResource("4.gif"));	//ì–‘ì •ì•„ : í‘œì‹œí•˜ê³ ì í•˜ëŠ” ì´ë¯¸ì§€ ì•„ì´ì½˜ ìƒì„±
+			imageLabel.setIcon(img);												//ì–‘ì •ì•„ : JLabelì— ì´ë¯¸ì§€ ì„¤ì •
+			contentPane.add(imageLabel, java.awt.BorderLayout.CENTER);				//ì–‘ì •ì•„ : JPanelì— ì¶”ê°€
+			this.setLocationRelativeTo(null);										//ì–‘ì •ì•„ : ì°½ ì¤‘ì•™ì— ìœˆë„ìš° ìƒì„±í•˜ê²Œ í•¨
+			this.setVisible(true);													//ì–‘ì •ì•„ : ì‹œê°í™”
 		}
-		catch(Exception e) {														//µ¿ÀÛ ¿¡·¯½Ã catch¹®
+		catch(Exception e) {														//ì–‘ì •ì•„ : ë™ì‘ ì—ëŸ¬ì‹œ catchë¬¸
 			e.printStackTrace();
 		}
 	}
