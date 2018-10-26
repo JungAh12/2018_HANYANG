@@ -4,6 +4,6 @@
 
 
 <다음주 화요일까지 100*100 pixel>
-정아 : grandma, clock, trash
-정원 : water, cat, wingshoes
-윤희 : druken, manhole, emergency
+1. 정아 : grandma, clock, trash
+1. 정원 : water, cat, wingshoes
+1. 윤희 : druken, manhole, emergency
